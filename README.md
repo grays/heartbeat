@@ -14,4 +14,5 @@ Designed to run as a worker on Heroku:
 
     heroku apps:create my-heartbeat --stack cedar
     heroku config:add URI=http://example.com AIRBRAKE_API_KEY=...
-    heroku scale web=0 worker=1
+    git push heroku master
+    heroku scale worker=1
