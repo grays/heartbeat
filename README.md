@@ -12,6 +12,8 @@ between pulses. The default is 60.
 
 Designed to run as a worker on Heroku:
 
+    git@github.com:grays/heartbeat.git
+    cd heartbeat
     heroku apps:create my-heartbeat --stack cedar
     heroku config:add URI=http://example.com AIRBRAKE_API_KEY=...
     git push heroku master
